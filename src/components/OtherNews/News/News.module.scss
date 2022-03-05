@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 8px;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+}
+
+.news {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: -0.01em;
+  color: #292929;
+
+  @media (min-width: 1200px) {
+    max-width: 193px;
+    font-weight: normal;
+  }
+}
+
+.image {
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    margin-right: 10px;
+    width: 90px;
+    height: 60px;
+  }
+}
