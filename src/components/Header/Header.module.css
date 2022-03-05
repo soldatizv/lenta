@@ -1,0 +1,1 @@
+.root {  padding: 16px;  background: #292929;  display: flex;  justify-content: space-between;  align-items: center;}.menu {  margin-right: 5px;}.messagesWrapper {  display: flex;}.messages {  color: #999999;  font-size: 12px;  line-height: 14px;  font-weight: 600;  margin-left: 6px;}
