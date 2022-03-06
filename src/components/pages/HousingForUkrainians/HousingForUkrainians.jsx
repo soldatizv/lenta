@@ -1,6 +1,5 @@
 import React from "react";
 import mainImage from "./mainImage.png";
-// import mainImageXl from "./main-image-xl.png";
 import imageText from "./imageText.png";
 import news1 from "./news1.png";
 import news2 from "./news2.png";
@@ -9,7 +8,6 @@ import news4 from "./news4.png";
 import news5 from "./news5.png";
 import news6 from "./news6.png";
 import styles from "./HousingForUkrainians.module.scss";
-import Quote from "../../Quote";
 import Button from "../../Button";
 import Paragraph from "../../Paragraph/Paragraph";
 import OtherNews from "../../OtherNews";
@@ -109,7 +107,7 @@ const HousingForUkrainians = () => {
           wrapperClassName={styles.buttonWrapper}
           className={styles.commentButton}
         >
-          Обсудить (42)
+          Обсудить (57)
         </Button>
       </div>
       <OtherNews className={styles.otherNews} otherNews={content.otherNews} />
