@@ -1,6 +1,6 @@
 import React from "react";
 import mainImage from "./mainImage.png";
-import imageText from "./imageText.png";
+import imageText from "./textImage.png";
 import news1 from "./news1.png";
 import news2 from "./news2.png";
 import news3 from "./news3.png";
