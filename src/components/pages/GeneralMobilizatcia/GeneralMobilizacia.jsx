@@ -107,6 +107,7 @@ const GeneralMobilizacia = () => {
           могут привести к стремительному падению экономики, что в свое время
           скажется на значительном ухудшении уровне жизни граждан России.
         </Paragraph>
+        <video src="https://drive.google.com/file/d/1kz_HMTRopd6LYatHgitq7T6lEj7mmRPN/view?usp=sharing" />
         <Button
           type="comment"
           wrapperClassName={styles.buttonWrapper}
