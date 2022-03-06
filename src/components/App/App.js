@@ -14,6 +14,9 @@ function App() {
 
       <div className={styles.wrapper}>
         <Switch>
+          <Route exact path={Routes.main}>
+            <RefugeesFromLDNR />
+          </Route>
           <Route exact path={Routes.refugees}>
             <RefugeesFromLDNR />
           </Route>
