@@ -4,6 +4,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import { Routes } from "../routes";
 import RefugeesFromLDNR from "../pages/RefugeesFromLDNR/RefugeesFromLDNR";
 import HousingForUkrainians from "../pages/HousingForUkrainians";
+import GeneralMobilizacia from "../pages/GeneralMobilizatcia";
 import Footer from "../Footer/Footer";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route exact path={Routes.housingForUkrainians}>
             <HousingForUkrainians />
+          </Route>
+          <Route exact path={Routes.mobilizatcia}>
+            <GeneralMobilizacia />
           </Route>
           <Redirect to={Routes.refugees} />
         </Switch>
