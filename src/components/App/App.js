@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { Routes } from "../routes";
 import RefugeesFromLDNR from "../pages/RefugeesFromLDNR/RefugeesFromLDNR";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Redirect to={Routes.refugees} />
         </div>
       </Switch>
+      <Footer />
     </div>
   );
 }

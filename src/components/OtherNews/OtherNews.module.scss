@@ -1,0 +1,20 @@
+.container {
+  background: #f3f3f3;
+  padding: 14px 12px 20px 20px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.containerWrapper {
+  @media (min-width: 1200px) {
+    display: inline-flex;
+  }
+}
