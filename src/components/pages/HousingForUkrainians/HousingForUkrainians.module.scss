@@ -1,0 +1,169 @@
+.mobileWrapper {
+  position: relative;
+  padding: 20px;
+  min-height: 409px;
+  margin-bottom: 18px;
+}
+
+.wrapper {
+  margin: 0 16px;
+}
+
+.desktopWrapper {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.desktopTitle {
+  display: none;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -0.05em;
+  color: #292929;
+  margin-bottom: 10px;
+  margin-top: 27px;
+  max-width: 620px;
+}
+
+.mobileTitle {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 26px;
+  padding-top: 255px;
+}
+
+.mainImage {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.image,
+.desktopImage {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  max-width: 391px;
+  max-height: 259px;
+}
+
+.desktopImage {
+  display: none;
+}
+
+.date {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.01em;
+  color: #999999;
+}
+
+.country {
+  margin-left: 15px;
+}
+
+.paragraphTitle {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #999999;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.subtitle::after {
+  content: "";
+  height: 1px;
+  background: #c4c4c4;
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+.text {
+  font-family: Source Serif Pro, sans-serif;
+  line-height: 23px;
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+.firstParagraph {
+  margin-top: 20px;
+}
+
+.buttonWrapper {
+  display: none;
+}
+
+.commentButton {
+  margin-left: auto;
+}
+
+.otherNews {
+  margin-top: 40px !important;
+  margin-bottom: 50px !important;
+}
+
+@media (min-width: 1200px) {
+  .mobileWrapper {
+    display: none;
+  }
+
+  .desktopWrapper {
+    display: block;
+    margin-top: 45px;
+  }
+
+  .desktopTitle {
+    display: block;
+  }
+
+  .wrapper {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
+  .subtitle::after {
+    content: none;
+  }
+
+  .desktopImage {
+    display: block;
+    max-height: 409px;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
