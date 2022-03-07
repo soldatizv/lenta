@@ -80,7 +80,7 @@
 }
 
 .image {
-  max-width: 391px;
+  max-width: 100%;
   max-height: 259px;
 }
 
@@ -148,6 +148,10 @@
   display: none;
 }
 
+.quote {
+  margin-bottom: 20px;
+}
+
 .commentButton {
   margin-left: auto;
 }
@@ -190,7 +194,7 @@
   }
 
   .image {
-    max-width: 357px;
+    max-width: 100%;
   }
 
   .buttonWrapper {
