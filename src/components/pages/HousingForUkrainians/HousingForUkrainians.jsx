@@ -1,47 +1,83 @@
 import React from "react";
 import mainImage from "./mainImage.png";
 import imageText from "./textImage.png";
-import news1 from "./news1.png";
-import news2 from "./news2.png";
-import news3 from "./news3.png";
-import news4 from "./news4.png";
-import news5 from "./news5.png";
-import news6 from "./news6.png";
 import { ReactComponent as InfoIcon } from "../../../images/info.svg";
 import styles from "./HousingForUkrainians.module.scss";
 import Button from "../../Button";
 import Paragraph from "../../Paragraph/Paragraph";
 import OtherNews from "../../OtherNews";
 import BoldSubtitle from "../../BoldSubtitle";
+import news1 from "../../../images/news/news1.png";
+import news2 from "../../../images/news/news2.png";
+import news3 from "../../../images/news/news3.png";
+import news4 from "../../../images/news/news4.png";
+import news5 from "../../../images/news/news5.png";
+import news6 from "../../../images/news/news6.png";
+import { Routes } from '../../routes';
 
 const content = {
   otherNews: [
     {
       image: news1,
-      text: '"С полок магазинов Екатеринбурга, Новоссибирска, Казани и Челябинска скоро исчезнут привычные жителям продукты"',
+      text: "Беженцев из Донбасса обязаны принять у себя жители Подмосковья, Москвы",
+      route: Routes.refugees,
     },
     {
       image: news2,
-      text: "Депутат Единой России внес законопроект о всероссийской трудовой военной обязанности",
+      text: "Стало известно, что россияне должны предоставить жилье для беженцев",
+      route: Routes.housingForUkrainians,
     },
     {
       image: news3,
-      text: "До 50% рабочих мест исчезнет в России уже весной в связи с новыми санкциями Запада",
+      text: 'Социологи рассказали, что население не готово к всеобщей мобилизации',
+      route: Routes.mobilizatcia,
     },
     {
       image: news4,
-      text: 'Путин: "Военное положение обязывает граждан платить за хлеб и масло вдвое больше обычного"',
+      text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+      route: Routes.mobilizatcia_1,
     },
     {
       image: news5,
-      text: 'Путин: "10-20 млн россиян, кто потеряют работу в связи с операцией на Украине будут задействованы в оборонпроме"',
+      text: "В результате операции на Украине повреждены 4 блока Запорожской АЭС. Выбросы радиации могут накрыть всю Евразию",
+      route: Routes.nuclearTread,
     },
     {
       image: news6,
-      text: "«Единая Россия»: Резкий скачок цен на повышение коммунальных услуг оправдан геополитической ситуацией",
+      text: 'МАГАТЭ предупредило о угрозе всемирной радиоактивной катастрофы. Россия в зоне наибольшей опасности',
+      route: Routes.nuclearTread_1,
     },
   ],
 };
+
+// const content = {
+//   otherNews: [
+//     {
+//       image: news1,
+//       text: '"С полок магазинов Екатеринбурга, Новоссибирска, Казани и Челябинска скоро исчезнут привычные жителям продукты"',
+//     },
+//     {
+//       image: news2,
+//       text: "Депутат Единой России внес законопроект о всероссийской трудовой военной обязанности",
+//     },
+//     {
+//       image: news3,
+//       text: "До 50% рабочих мест исчезнет в России уже весной в связи с новыми санкциями Запада",
+//     },
+//     {
+//       image: news4,
+//       text: 'Путин: "Военное положение обязывает граждан платить за хлеб и масло вдвое больше обычного"',
+//     },
+//     {
+//       image: news5,
+//       text: 'Путин: "10-20 млн россиян, кто потеряют работу в связи с операцией на Украине будут задействованы в оборонпроме"',
+//     },
+//     {
+//       image: news6,
+//       text: "«Единая Россия»: Резкий скачок цен на повышение коммунальных услуг оправдан геополитической ситуацией",
+//     },
+//   ],
+// };
 
 const HousingForUkrainians = () => {
   return (

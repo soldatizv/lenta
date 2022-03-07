@@ -2,18 +2,19 @@ import React from "react";
 import mainImage from "./mainImage.png";
 import textImage from "./textImage.png";
 import { ReactComponent as InfoIcon } from "../../../images/info.svg";
-import news1 from "./news1.png";
-import news2 from "./news2.png";
-import news3 from "./news3.png";
-import news4 from "./news4.png";
-import news5 from "./news5.png";
-import news6 from "./news6.png";
 import video from '../../../video/military.mp4';
 import Button from "../../Button";
 import Paragraph from "../../Paragraph/Paragraph";
 import OtherNews from "../../OtherNews";
 import styles from "./GeneralMobilizacia1.module.scss";
 import Quote from "../../Quote";
+import news1 from "../../../images/news/news1.png";
+import news2 from "../../../images/news/news2.png";
+import news3 from "../../../images/news/news3.png";
+import news4 from "../../../images/news/news4.png";
+import news5 from "../../../images/news/news5.png";
+import news6 from "../../../images/news/news6.png";
+import { Routes } from '../../routes';
 
 const content = {
   quote: {
@@ -26,30 +27,72 @@ const content = {
   otherNews: [
     {
       image: news1,
-      text: "Шойгу объявил, что 40% русских зарплат пойдут на нужды армии",
+      text: "Беженцев из Донбасса обязаны принять у себя жители Подмосковья, Москвы",
+      route: Routes.refugees,
     },
     {
       image: news2,
-      text: "Лавров заявил о возможном введении налога на армию. Зарплаты станут еще меньше",
+      text: "Стало известно, что россияне должны предоставить жилье для беженцев",
+      route: Routes.housingForUkrainians,
     },
     {
       image: news3,
-      text: "Жителей России обяжут перевести часть зарплаты на нужды вооруженных сил",
+      text: 'Социологи рассказали, что население не готово к всеобщей мобилизации',
+      route: Routes.mobilizatcia,
     },
     {
       image: news4,
-      text: "У президента заявили об огромных затратах на армию. Возможны урезания зарплат для пополнения бюджета.",
+      text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+      route: Routes.mobilizatcia_1,
     },
     {
       image: news5,
-      text: "Военный налог: часть доходов россиян пойдет на финансирование армии",
+      text: "В результате операции на Украине повреждены 4 блока Запорожской АЭС. Выбросы радиации могут накрыть всю Евразию",
+      route: Routes.nuclearTread,
     },
     {
       image: news6,
-      text: "Кремль подтвердил возможность введения военного налога.",
+      text: 'МАГАТЭ предупредило о угрозе всемирной радиоактивной катастрофы. Россия в зоне наибольшей опасности',
+      route: Routes.nuclearTread_1,
     },
   ],
 };
+
+// const content = {
+//   quote: {
+//     text:
+//       "Мобилизацию провести в центральном и западных военных округах Российской Федерации. " +
+//       "Призыв военнообязанных, резервистов и привлечение транспортных средств для обеспечения нужд военных формирований поручено осуществить в объемах, определенных в соответствии с мобилизационными планами.",
+//     author: "Владимир Путин",
+//     authorPosition: "президент Российской Федерации",
+//   },
+//   otherNews: [
+//     {
+//       image: news1,
+//       text: "Шойгу объявил, что 40% русских зарплат пойдут на нужды армии",
+//     },
+//     {
+//       image: news2,
+//       text: "Лавров заявил о возможном введении налога на армию. Зарплаты станут еще меньше",
+//     },
+//     {
+//       image: news3,
+//       text: "Жителей России обяжут перевести часть зарплаты на нужды вооруженных сил",
+//     },
+//     {
+//       image: news4,
+//       text: "У президента заявили об огромных затратах на армию. Возможны урезания зарплат для пополнения бюджета.",
+//     },
+//     {
+//       image: news5,
+//       text: "Военный налог: часть доходов россиян пойдет на финансирование армии",
+//     },
+//     {
+//       image: news6,
+//       text: "Кремль подтвердил возможность введения военного налога.",
+//     },
+//   ],
+// };
 
 const GeneralMobilizacia1 = () => {
   return (

@@ -2,15 +2,16 @@ import React from "react";
 import mainImage from "./main-img.png";
 import mainImageXl from "./main-image-xl.png";
 import imageText from "./image-text.png";
-import news1 from "./news1.png";
-import news2 from "./news2.png";
-import news3 from "./news3.png";
-import news4 from "./news4.png";
-import news5 from "./news5.png";
-import news6 from "./news6.png";
+import news1 from "../../../images/news/news1.png";
+import news2 from "../../../images/news/news2.png";
+import news3 from "../../../images/news/news3.png";
+import news4 from "../../../images/news/news4.png";
+import news5 from "../../../images/news/news5.png";
+import news6 from "../../../images/news/news6.png";
 import styles from "./RefugeesFromLDNR.module.css";
 import Quote from "../../Quote";
 import Button from "../../Button";
+import { Routes } from '../../routes';
 import Paragraph from "../../Paragraph/Paragraph";
 import OtherNews from "../../OtherNews";
 
@@ -25,30 +26,72 @@ const content = {
   otherNews: [
     {
       image: news1,
-      text: "Путин на фоне санкций подписал указ о повышении коммунальных плтажей и других дополнительных экономических мерах",
+      text: "Беженцев из Донбасса обязаны принять у себя жители Подмосковья, Москвы",
+      route: Routes.refugees,
     },
     {
       image: news2,
-      text: "«Единая Россия»: Резкий скачок цен на повышение коммунальных услуг оправдан геополитической ситуацией",
+      text: "Стало известно, что россияне должны предоставить жилье для беженцев",
+      route: Routes.housingForUkrainians,
     },
     {
       image: news3,
-      text: 'Набиуллина "Реальные доходы граждан России сократятся на 50% весной 2022"',
+      text: 'Социологи рассказали, что население не готово к всеобщей мобилизации',
+      route: Routes.mobilizatcia,
     },
     {
       image: news4,
-      text: "Социологи рассказали, что в среднем население не готово к всеобщей мобилизации",
+      text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+      route: Routes.mobilizatcia_1,
     },
     {
       image: news5,
-      text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+      text: "В результате операции на Украине повреждены 4 блока Запорожской АЭС. Выбросы радиации могут накрыть всю Евразию",
+      route: Routes.nuclearTread,
     },
     {
       image: news6,
-      text: 'Росстат: "В марте-апреле цены на базовы продукты вырастут на 70-80%"',
+      text: 'МАГАТЭ предупредило о угрозе всемирной радиоактивной катастрофы. Россия в зоне наибольшей опасности',
+      route: Routes.nuclearTread_1,
     },
   ],
 };
+
+// const content = {
+//   quote: {
+//     text:
+//       "Жители Подмосковья и Москвы обязаны предоставить жилье для беженцев. " +
+//       "Каждый москвич должен зарегистрироваться на сайте “Приют” и отметить на карте жилье, которое готов предоставить беженцам.",
+//     author: "Владимир Путин",
+//     authorPosition: "президент Российской Федерации",
+//   },
+//   otherNews: [
+//     {
+//       image: news1,
+//       text: "Путин на фоне санкций подписал указ о повышении коммунальных плтажей и других дополнительных экономических мерах",
+//     },
+//     {
+//       image: news2,
+//       text: "«Единая Россия»: Резкий скачок цен на повышение коммунальных услуг оправдан геополитической ситуацией",
+//     },
+//     {
+//       image: news3,
+//       text: 'Набиуллина "Реальные доходы граждан России сократятся на 50% весной 2022"',
+//     },
+//     {
+//       image: news4,
+//       text: "Социологи рассказали, что в среднем население не готово к всеобщей мобилизации",
+//     },
+//     {
+//       image: news5,
+//       text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+//     },
+//     {
+//       image: news6,
+//       text: 'Росстат: "В марте-апреле цены на базовы продукты вырастут на 70-80%"',
+//     },
+//   ],
+// };
 
 const RefugeesFromLDNR = () => {
   return (
