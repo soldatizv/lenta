@@ -1,10 +1,11 @@
 import React from 'react';
+import cn from 'classnames'
 import { ReactComponent as QuoteIcon } from '../../images/quote.svg';
 import styles from './Quote.module.scss';
 
-const Quote = ({ text, author, position }) => {
+const Quote = ({ text, author, position, className }) => {
   return (
-    <div className={styles.quoteWrapper}>
+    <div className={cn(styles.quoteWrapper, className)}>
       <QuoteIcon />
       <div className={styles.text}>{text}</div>
       <div className={styles.author}>{author}</div>

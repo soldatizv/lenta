@@ -8,6 +8,7 @@ import GeneralMobilizacia from "../pages/GeneralMobilizatcia";
 import Footer from "../Footer/Footer";
 import GeneralMobilizatcia1 from "../pages/GeneralMobilizatcia1";
 import NuclearTread from "../pages/NuclearTread";
+import NuclearTreadOne from "../pages/NuclearThread_1";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route exact path={Routes.nuclearTread}>
             <NuclearTread />
+          </Route>
+          <Route exact path={Routes.nuclearTread_1}>
+            <NuclearTreadOne />
           </Route>
           <Redirect to={Routes.refugees} />
         </Switch>
