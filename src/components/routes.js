@@ -4,4 +4,6 @@ export const Routes = {
   housingForUkrainians: "/news/2022/bezhenci-1",
   mobilizatcia: '/news/2022/mobilizatcia',
   mobilizatcia_1: '/news/2022/mobilizatcia-1',
+  nuclearTread: '/news/2022/yadernaia-ugroza',
+  nuclearTread_1: '/news/2022/yadernaia-ugroza-1',
 }
