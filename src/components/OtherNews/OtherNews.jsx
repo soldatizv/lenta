@@ -9,7 +9,7 @@ const OtherNews = ({ otherNews, className }) => {
       <h5 className={styles.title}>Другие новости</h5>
       <div className={styles.containerWrapper}>
         {otherNews.map(({ image, text }) => (
-          <News image={image}>{text}</News>
+          <News image={image} key={text}>{text}</News>
         ))}
       </div>
     </div>
