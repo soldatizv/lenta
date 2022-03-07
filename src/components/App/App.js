@@ -7,6 +7,7 @@ import HousingForUkrainians from "../pages/HousingForUkrainians";
 import GeneralMobilizacia from "../pages/GeneralMobilizatcia";
 import Footer from "../Footer/Footer";
 import GeneralMobilizatcia1 from "../pages/GeneralMobilizatcia1";
+import NuclearTread from "../pages/NuclearTread";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route exact path={Routes.mobilizatcia_1}>
             <GeneralMobilizatcia1 />
+          </Route>
+          <Route exact path={Routes.nuclearTread}>
+            <NuclearTread />
           </Route>
           <Redirect to={Routes.refugees} />
         </Switch>
