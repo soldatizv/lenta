@@ -7,6 +7,7 @@ import news3 from "./news3.png";
 import news4 from "./news4.png";
 import news5 from "./news5.png";
 import news6 from "./news6.png";
+import { ReactComponent as InfoIcon } from "../../../images/info.svg";
 import styles from "./HousingForUkrainians.module.scss";
 import Button from "../../Button";
 import Paragraph from "../../Paragraph/Paragraph";
@@ -25,7 +26,7 @@ const content = {
     },
     {
       image: news3,
-      text: 'До 50% рабочих мест исчезнет в России уже весной в связи с новыми санкциями Запада',
+      text: "До 50% рабочих мест исчезнет в России уже весной в связи с новыми санкциями Запада",
     },
     {
       image: news4,
@@ -37,7 +38,7 @@ const content = {
     },
     {
       image: news6,
-      text: '«Единая Россия»: Резкий скачок цен на повышение коммунальных услуг оправдан геополитической ситуацией',
+      text: "«Единая Россия»: Резкий скачок цен на повышение коммунальных услуг оправдан геополитической ситуацией",
     },
   ],
 };
@@ -50,13 +51,16 @@ const HousingForUkrainians = () => {
         <h1 className={styles.mobileTitle}>
           Стало известно, что россияне должны предоставить жилье для беженцев.
         </h1>
+      </div>
+      <div className={styles.dateWrapper}>
         <p className={styles.date}>
           16:27, 4 марта 2022 <span className={styles.country}>Россия</span>
         </p>
+        <InfoIcon />
       </div>
       <div className={styles.desktopWrapper}>
         <p className={styles.date}>
-          23:54, 4 марта 2022 <span className={styles.country}>Мир</span>
+          16:27, 4 марта 2022 <span className={styles.country}>Мир</span>
         </p>
       </div>
       <div className={styles.wrapper}>
