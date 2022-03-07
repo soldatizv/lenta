@@ -7,6 +7,8 @@ import news3 from "./news3.png";
 import news4 from "./news4.png";
 import news5 from "./news5.png";
 import news6 from "./news6.png";
+import { ReactComponent as InfoIcon } from "../../../images/info.svg";
+import video from '../../../video/economyRF.mp4';
 import Button from "../../Button";
 import Paragraph from "../../Paragraph/Paragraph";
 import OtherNews from "../../OtherNews";
@@ -52,18 +54,21 @@ const content = {
 const GeneralMobilizacia = () => {
   return (
     <>
-      <div className={styles.mobileWrapper}>
+    <div className={styles.mobileWrapper}>
         <img src={mainImage} className={styles.mainImage} alt="main-img" />
         <h1 className={styles.mobileTitle}>
           Социологи рассказали, что население не готово к всеобщей мобилизации
         </h1>
+      </div>
+      <div className={styles.dateWrapper}>
         <p className={styles.date}>
-          16:27, 4 марта 2022 <span className={styles.country}>Россия</span>
+          00:54, 5 марта 2022 <span className={styles.country}>Россия</span>
         </p>
+        <InfoIcon />
       </div>
       <div className={styles.desktopWrapper}>
         <p className={styles.date}>
-          23:54, 4 марта 2022 <span className={styles.country}>Мир</span>
+          00:54, 5 марта 2022 <span className={styles.country}>Мир</span>
         </p>
       </div>
       <div className={styles.wrapper}>
@@ -85,7 +90,7 @@ const GeneralMobilizacia = () => {
         <Quote
           text={content.quote.text}
           author={content.quote.author}
-          authorPosition={content.quote.authorPosition}
+          position={content.quote.authorPosition}
         />
         <Paragraph className={styles.firstParagraph}>
           Также, результаты исследования указывают на то, что в среднем 77.5%
@@ -107,7 +112,7 @@ const GeneralMobilizacia = () => {
           могут привести к стремительному падению экономики, что в свое время
           скажется на значительном ухудшении уровне жизни граждан России.
         </Paragraph>
-        <video src="https://drive.google.com/file/d/1kz_HMTRopd6LYatHgitq7T6lEj7mmRPN/view?usp=sharing" />
+        <video src={video} className={styles.video} type="video/mp4" controls/>
         <Button
           type="comment"
           wrapperClassName={styles.buttonWrapper}

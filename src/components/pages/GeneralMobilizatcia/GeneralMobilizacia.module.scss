@@ -1,8 +1,10 @@
 .mobileWrapper {
   position: relative;
-  padding: 20px;
-  min-height: 409px;
-  margin-bottom: 18px;
+  padding: 20px 20px 0;
+  min-height: 374px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .wrapper {
@@ -14,6 +16,22 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
+}
+
+.dateWrapper {
+  width: 100%;
+  height: 54px;
+  background: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 18px;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .desktopTitle {
@@ -34,7 +52,7 @@
   font-size: 25px;
   line-height: 30px;
   color: #ffffff;
-  margin-bottom: 26px;
+  margin-bottom: 6px;
   padding-top: 255px;
 }
 
@@ -130,6 +148,11 @@
   margin-bottom: 50px !important;
 }
 
+.video {
+  max-width: 100%;
+  cursor: pointer;
+}
+
 @media (min-width: 1200px) {
   .mobileWrapper {
     display: none;
@@ -147,6 +170,10 @@
   .wrapper {
     max-width: 620px;
     margin: 0 auto;
+  }
+
+  .date {
+    display: none;
   }
 
   .subtitle {
