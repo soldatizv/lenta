@@ -2,18 +2,18 @@ import React from "react";
 import mainImage from "./mainImage.png";
 import textImage from "./textImage.png";
 import { ReactComponent as InfoIcon } from "../../../images/info.svg";
-import news1 from "./news1.png";
-import news2 from "./news2.png";
-import news3 from "./news3.png";
-import news4 from "./news4.png";
-import news5 from "./news5.png";
-import news6 from "./news6.png";
-import video from "../../../video/military.mp4";
 import Button from "../../Button";
 import Paragraph from "../../Paragraph/Paragraph";
 import OtherNews from "../../OtherNews";
 import styles from "./NuclearTread.module.scss";
 import Quote from "../../Quote";
+import news1 from "../../../images/news/news1.png";
+import news2 from "../../../images/news/news2.png";
+import news3 from "../../../images/news/news3.png";
+import news4 from "../../../images/news/news4.png";
+import news5 from "../../../images/news/news5.png";
+import news6 from "../../../images/news/news6.png";
+import { Routes } from '../../routes';
 
 const content = {
   quote: {
@@ -26,29 +26,70 @@ const content = {
     {
       image: news1,
       text: "Беженцев из Донбасса обязаны принять у себя жители Подмосковья, Москвы",
+      route: Routes.refugees,
     },
     {
       image: news2,
-      text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+      text: "Стало известно, что россияне должны предоставить жилье для беженцев",
+      route: Routes.housingForUkrainians,
     },
     {
       image: news3,
-      text: 'Путин: "10-20 млн россиян, кто потеряют работу в связи с операцией на Украине будут задействованы в оборонпроме"',
+      text: 'Социологи рассказали, что население не готово к всеобщей мобилизации',
+      route: Routes.mobilizatcia,
     },
     {
       image: news4,
-      text: "Путин на фоне санкций подписал указ о повышении коммунальных платежей и других дополнительных экономических мерах",
+      text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+      route: Routes.mobilizatcia_1,
     },
     {
       image: news5,
-      text: "Военный налог: часть доходов россиян пойдет на финансирование армии",
+      text: "В результате операции на Украине повреждены 4 блока Запорожской АЭС. Выбросы радиации могут накрыть всю Евразию",
+      route: Routes.nuclearTread,
     },
     {
       image: news6,
-      text: "Пенсии сократятся на 30-40% в связи с необходимостью финансирования гос бюджета",
+      text: 'МАГАТЭ предупредило о угрозе всемирной радиоактивной катастрофы. Россия в зоне наибольшей опасности',
+      route: Routes.nuclearTread_1,
     },
   ],
 };
+
+// const content = {
+//   quote: {
+//     text: "В России весьма совершенная система мониторинга, и каких-либо чрезвычайных ситуаций не фиксировалось - только лишь определенные колебания. " +
+//     "Были соответствующие заявления МАГАТЭ, но по нашему мнению уровень радиации не представляет слишком серьезную угрозу для жизни населения",
+//     author: "Дмитрий Песков",
+//     authorPosition: "пресс-секретарь президента Российской Федерации",
+//   },
+//   otherNews: [
+//     {
+//       image: news1,
+//       text: "Беженцев из Донбасса обязаны принять у себя жители Подмосковья, Москвы",
+//     },
+//     {
+//       image: news2,
+//       text: "Всеобщая мобилизация: кого и в какую очередь будут призывать на территории Российской Федерации",
+//     },
+//     {
+//       image: news3,
+//       text: 'Путин: "10-20 млн россиян, кто потеряют работу в связи с операцией на Украине будут задействованы в оборонпроме"',
+//     },
+//     {
+//       image: news4,
+//       text: "Путин на фоне санкций подписал указ о повышении коммунальных платежей и других дополнительных экономических мерах",
+//     },
+//     {
+//       image: news5,
+//       text: "Военный налог: часть доходов россиян пойдет на финансирование армии",
+//     },
+//     {
+//       image: news6,
+//       text: "Пенсии сократятся на 30-40% в связи с необходимостью финансирования гос бюджета",
+//     },
+//   ],
+// };
 
 const NuclearTread = () => {
   return (

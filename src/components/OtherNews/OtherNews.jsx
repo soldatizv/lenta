@@ -8,8 +8,8 @@ const OtherNews = ({ otherNews, className }) => {
     <div className={cn(styles.container, className)}>
       <h5 className={styles.title}>Другие новости</h5>
       <div className={styles.containerWrapper}>
-        {otherNews.map(({ image, text }) => (
-          <News image={image} key={text}>{text}</News>
+        {otherNews.map(({ image, text, route }) => (
+          <News image={image} key={text} route={route}>{text}</News>
         ))}
       </div>
     </div>
